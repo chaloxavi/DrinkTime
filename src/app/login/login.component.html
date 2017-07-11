@@ -1,0 +1,22 @@
+<form novalidate [formGroup]="form" id="login">
+  <fieldset>
+    <legend>Ingreso de Usuario</legend>
+    <p>¿No tienes Cuenta?
+      <a routerLinkActive="active"
+         routerLink="/register"
+         *ngIf="!authInfo?.isLoggedIn()"
+     >Registrate</a>
+    </p>
+    <div class="form-fields">
+      <div class="form-field">
+       
+         <input name="email" formControlName="email" type="email" class="form-control" placeholder="Correo" aria-describedby="emailHelp">
+      </div>
+      <div class="form-field">
+         
+         <input name="password" formControlName="password" type="password" class="form-control" placeholder="Contraseña">
+      </div>
+    </div>
+     <button class="btn" (click)="signin()">Ingresar</button>
+   </fieldset>
+</form>

@@ -1,0 +1,42 @@
+.list-group-item {
+  min-height: 200px;
+  min-width: 290px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+label {
+  font-size: 1.0em;
+  font-weight: bold;
+}
+
+label.location {
+  float: right;
+}
+
+@media (max-width: 700px) {
+  label {
+    font-size: 0.90em;
+  }
+}
+
+.image {
+  width: 140px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.occupation {
+  display: inline-block;
+  margin: 15px;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+}
+
+img:hover {
+  cursor: pointer;
+}

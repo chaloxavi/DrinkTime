@@ -1,0 +1,19 @@
+header {
+  margin-bottom: 20px;
+}
+
+section {
+  text-align: center;
+}
+
+input {
+  min-width: 290px;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+label {
+  font-size: 1.25em;
+  font-weight: bold;
+}

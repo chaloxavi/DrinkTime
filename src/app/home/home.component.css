@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'brand';
+  src: url('./assets/fonts/Destrukt.ttf')
+}
+
+.main {
+  margin-top: 80px;
+  text-align: center;
+}
+
+img {
+  width: 85px;
+  padding-bottom: 35px;
+}
+
+header {
+  font-size: 4.0em;
+  padding: 5px;
+  font-family: 'brand', sans-serif;
+  color: #4EC5C1;
+  text-align: center;
+}
+
+@media (max-width: 360px) {
+  header {
+    font-size: 3.0em;
+  }
+}
+
+#tagline {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.0em;
+  color: #4EC5C1;
+}
+
+section#buttons {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 25px;
+}
+
+section#buttons button.btn {
+  color: #4EC5C1;
+  background-color: #f7f5f4;
+  border-style: solid;
+  border-color: #4EC5C1;
+}
+
+section#buttons button.btn:hover {
+  cursor: pointer;
+  background-color: #e2f5f5;
+}

@@ -1,0 +1,21 @@
+.container-fluid {
+  margin-bottom: 45px;
+}
+
+
+/* ----------------------------- Footer Styles ------------------------------ */
+
+footer {
+   position: fixed;
+   left: 0px;
+   bottom: 0px;
+   height: 30px;
+   width: 100%;
+   background: #4EC5C1;
+}
+
+#footer-text {
+  color: #f7f5f4;
+  text-align: center;
+  padding-top: 3px;
+}

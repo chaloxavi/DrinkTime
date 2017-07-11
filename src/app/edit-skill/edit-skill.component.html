@@ -1,0 +1,5 @@
+<skill-form [initialValue]="currentSkill" #form></skill-form>
+<div class="button-container">
+  <button class="btn" (click)="save(form.value)">Save Changes</button>
+  <button class="btn" (click)="delete(); deleteSkillPerUser();">Remove</button>
+</div>
