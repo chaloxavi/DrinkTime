@@ -13,9 +13,10 @@ export class UserprofileFormComponent implements OnInit, OnChanges {
   initialValue: any;
 
   form: FormGroup;
+  
 
   constructor(private formBuilder: FormBuilder) { 
-
+debugger;
     this.form = this.formBuilder.group({
       username: ['', Validators.required],
       photo: ['', Validators.required],
@@ -33,6 +34,10 @@ export class UserprofileFormComponent implements OnInit, OnChanges {
       this.form.patchValue(changes['initialValue'].currentValue)
     }
 
+  }
+    onChange(event) {
+    var files = event.srcElement.files;
+    console.log(files);
   }
 
   isErrorVisible(field: string, error:string) {

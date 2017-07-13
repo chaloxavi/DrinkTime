@@ -4,6 +4,13 @@ import { User } from '../shared/model/user';
 import { UsersService } from "../shared/model/users.service";
 import { AuthService } from "../shared/security/auth.service";
 
+
+import { Observable } from 'rxjs';
+
+declare var firebase: any;
+
+
+
 @Component({
   selector: 'app-edit-userprofile',
   templateUrl: './edit-userprofile.component.html',
@@ -27,6 +34,7 @@ export class EditUserprofileComponent implements OnInit {
   save(userData) {
   // sends user key and data from form to service
     userData['email'] = this.auth.userEmail;
+     userData['photo'] = "hola";
     debugger;
     this.usersService.saveEditedUser(this.user.$key, userData)
       .subscribe(

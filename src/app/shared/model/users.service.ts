@@ -11,8 +11,11 @@ export class UsersService {
 
   sdkDb: any;
 
+
   constructor(private af: AngularFire, @Inject(FirebaseRef) fb, private db: AngularFireDatabase) {
     this.sdkDb = fb.database().ref();
+  
+
   }
 
   findAllUsers(): Observable<User[]> {
@@ -98,7 +101,7 @@ export class UsersService {
 
   saveEditedUser(userId, user):Observable<any>{
     // put the user data into a blank object
-    const userToSave = Object.assign({}, user);
+    const userToSave. = Object.assign({}, user);
     //we don't want the key to be inside of the userToSave object because it's part of the url.
     delete(userToSave.$key); 
     let dataToSave = {};
@@ -106,6 +109,7 @@ export class UsersService {
     dataToSave['users/' + userId] = userToSave;
     // this time we don't need to update the usersPerCourse because the association is already there.
     return this.firebaseUpdate(dataToSave);
+  
   }
 
 
@@ -123,8 +127,12 @@ export class UsersService {
             subject.complete();
           }
         );
+
+      
     return subject.asObservable();
   }
+
+  
 
   findUserByKey(key){
     return this.af.database.object('users/' + key);
