@@ -101,7 +101,7 @@ export class UsersService {
 
   saveEditedUser(userId, user):Observable<any>{
     // put the user data into a blank object
-    const userToSave. = Object.assign({}, user);
+    const userToSave = Object.assign({}, user);
     //we don't want the key to be inside of the userToSave object because it's part of the url.
     delete(userToSave.$key); 
     let dataToSave = {};
