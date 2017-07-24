@@ -8,12 +8,15 @@ import { FirebaseListFactoryOpts } from "angularfire2/interfaces";
 
 @Injectable()
 export class UsersService {
-
+  storage: any;
+  //uploader: FileUploader = new FileUploader({ url: 'drinktime-f1b35.appspot.com' });
+  
   sdkDb: any;
-
+  
 
   constructor(private af: AngularFire, @Inject(FirebaseRef) fb, private db: AngularFireDatabase) {
     this.sdkDb = fb.database().ref();
+    this.storage= fb.storage();
   
 
   }
@@ -131,6 +134,8 @@ export class UsersService {
       
     return subject.asObservable();
   }
+
+
 
   
 

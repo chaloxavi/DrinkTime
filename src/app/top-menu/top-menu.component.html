@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" *ngIf="authInfo?.isLoggedIn()" >
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -6,16 +6,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a routerLink="home"><div id="brand" class="navbar-brand">Next Place</div></a>
+      <a routerLink="community"><div id="brand" class="navbar-brand">Next Place</div></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active">
-          <a  routerLinkActive="active"
-              routerLink="home"
-              [routerLinkActiveOptions]="{exact:true}"
-          >Next Place</a>
-        </li>
+   
         <li>
           <a  routerLinkActive="active"
               routerLink="community"

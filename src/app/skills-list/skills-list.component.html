@@ -1,11 +1,11 @@
 <header>
-  <h2>Current Skills</h2>
+  <h2>Tus Publicaciones</h2>
 </header>
 <ul class="list-group" *ngFor="let skill of skills">
   <li class="list-group-item">
     <button class="btn btn-sm edit"(click)="goToEdit(skill)">Edit</button>
-    <label>Skill </label><p>{{skill.skill_name}}</p>
-    <label>Description</label><p> {{skill.description}}</p>
+    <label>Tipo</label><p>{{skill.skill_name}}</p>
+    <label>Descripcion</label><p> {{skill.description}}</p>
   </li>
 </ul>
-<button class="btn btn-lg add" routerLink="/add-skill">Add Skill</button>
+<button class="btn btn-lg add" routerLink="/add-skill">Agregar Publicacion</button>

@@ -2,12 +2,12 @@
 import {AuthMethods, AuthProviders} from "angularfire2";
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyARwWpG7UzrYwy6A4-M6qtRf4UMG1QBR2o",
-    authDomain: "drinktime-96c95.firebaseapp.com",
-    databaseURL: "https://drinktime-96c95.firebaseio.com",
-    projectId: "drinktime-96c95",
-    storageBucket: "drinktime-96c95.appspot.com",
-    messagingSenderId: "982552984630"
+ apiKey: "AIzaSyAW-cZ5cQjW0FRc53Zuya7BXf5Er5EHkeA",
+    authDomain: "drinktime-f1b35.firebaseapp.com",
+    databaseURL: "https://drinktime-f1b35.firebaseio.com",
+    projectId: "drinktime-f1b35",
+    storageBucket: "drinktime-f1b35.appspot.com",
+    messagingSenderId: "19232824594"
 };
 
 

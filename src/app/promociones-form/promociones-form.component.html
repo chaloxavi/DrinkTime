@@ -1,0 +1,37 @@
+<form [formGroup]="form" autocomplete="off" novalidate>
+  <fieldset>
+    <legend>Encontraste una promocion cuentanos...!!</legend>
+
+    <div class="form-field">
+      <label>Tipo</label>
+      <select name="tipo_promocion" class="form-control" formControlName="tipo_promocion">
+        <option value="Bebidas">Bebidas</option>
+        <option value="Comida">Comida</option>
+        <option value="Comida y Bebidas">Comida y Bebidas</option>
+      </select>
+      <div class="field-error-message" *ngIf="isErrorVisible('tipo_promocion', 'required')">Field is required</div>
+    </div>
+    <div class="form-field">
+      <label>Nombre</label>
+      <input name="nombre" class="form-control" formControlName="nombre">
+      <div class="field-error-message" *ngIf="isErrorVisible('nombre', 'required')">Field is required</div>
+    </div>
+
+    <div class="form-field">
+      <label>Lugar</label>
+      <input name="lugar" class="form-control" formControlName="lugar">
+      <div class="field-error-message" *ngIf="isErrorVisible('lugar', 'required')">Field is required</div>
+    </div>
+        <div class="form-field">
+      <label>Precio</label>
+      <input name="precio" class="form-control" formControlName="precio">
+      <div class="field-error-message" *ngIf="isErrorVisible('precio', 'required')">Field is required</div>
+    </div>
+      </div>
+        <div class="form-field">
+      <label>descripcion</label>
+      <input name="descripcion" class="form-control" formControlName="descripcion">
+      <div class="field-error-message" *ngIf="isErrorVisible('descripcion', 'required')">Field is required</div>
+    </div>
+  </fieldset>
+</form>

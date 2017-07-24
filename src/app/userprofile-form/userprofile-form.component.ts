@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
-
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'userprofile-form',
@@ -16,7 +16,6 @@ export class UserprofileFormComponent implements OnInit, OnChanges {
   
 
   constructor(private formBuilder: FormBuilder) { 
-debugger;
     this.form = this.formBuilder.group({
       username: ['', Validators.required],
       photo: ['', Validators.required],
@@ -37,6 +36,27 @@ debugger;
   }
     onChange(event) {
     var files = event.srcElement.files;
+    var storage = firebase.storage();
+
+  
+    console.log(files);
+  
+  var storageRef = firebase.storage().ref();
+  
+  //dynamically set reference to the file name
+  var thisRef = storageRef.child(files.name);
+
+  //put request upload file to firebase storage
+  thisRef.put(files).then(function(snapshot) {
+    //console.log('Uploaded a blob or file!'+thisRef);
+});
+
+
+  
+  //get request to get URL for uploaded file
+ thisRef.getDownloadURL().then(function(url) {
+  console.log(url);
+  })
     console.log(files);
   }
 
