@@ -4,8 +4,10 @@
 
 body {
   /*background-color: #f7f5f4;*/
- /*background-image: url('../src/assets/geometry/geometry_@2X.png');*/
+ 
   background-size: cover;
+  background-color: black;
+  color:orange;
 }
 
 @font-face {

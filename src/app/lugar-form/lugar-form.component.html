@@ -1,0 +1,26 @@
+<form [formGroup]="form" autocomplete="off" novalidate>
+  <fieldset>
+    <legend>Lugar</legend>
+    <div class="form-field">
+      <label>Lugar name</label>
+      <select name="lugar_name" class="form-control" formControlName="lugar_name">
+        <option value="Computer Programming">Computer Programming</option>
+        <option value="Music">Music</option>
+        <option value="Art">Art</option>
+        <option value="Video Games">Video Games</option>
+        <option value="Sports">Sports</option>
+        <option value="Fitness and Health">Fitness and Health</option>
+        <option value="Science">Science</option>
+        <option value="Writing">Writing</option>
+        <option value="Food and Drink">Food and Drink</option>
+      </select>
+      <div class="field-error-message" *ngIf="isErrorVisible('lugar_name', 'required')">Field is required</div>
+    </div>
+    <div class="form-field">
+      <label>Description</label>
+      <p>What is your specialty or level of expertise?</p>
+      <input name="description" class="form-control" formControlName="description">
+      <div class="field-error-message" *ngIf="isErrorVisible('description', 'required')">Field is required</div>
+    </div>
+  </fieldset>
+</form>

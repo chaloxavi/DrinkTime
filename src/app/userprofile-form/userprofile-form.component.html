@@ -1,27 +1,25 @@
-
 <form [formGroup]="form" autocomplete="off" novalidate>
   <fieldset>
-    <legend>User profile</legend>
+    <legend>Perfil de Usuario</legend>
     <div class="form-field">
-      <label>Nombre de Usuario</label>
+      <label>Nombre de usuario</label>
       <input name="username" formControlName="username">
       <div class="field-error-message" *ngIf="isErrorVisible('username', 'required')">Field is required</div>
     </div>
-   
     <div class="form-field">
-      <label>Occupation</label>
+      <label>Foto</label>
+      <input name="photo" formControlName="photo">
+      <div class="field-error-message" *ngIf="isErrorVisible('photo', 'required')">Field is required</div>
+    </div>
+    <div class="form-field">
+      <label>Ocupacion</label>
       <input name="occupation" formControlName="occupation">
       <div class="field-error-message" *ngIf="isErrorVisible('occupation', 'required')">Field is required</div>
     </div>
     <div class="form-field">
-      <label>Location</label>
+      <label>Lugar</label>
       <input name="location" formControlName="location">
       <div class="field-error-message" *ngIf="isErrorVisible('location', 'required')">Field is required</div>
-    </div>
-     <div class="form-field">
-      <label>Foto</label>
-      <input name="photo"  formControlName="photo"  >
-      <div class="field-error-message" *ngIf="isErrorVisible('photo', 'required')">Field is required</div>
     </div>
   </fieldset>
 </form>

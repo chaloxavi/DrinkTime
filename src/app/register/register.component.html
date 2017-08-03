@@ -1,14 +1,15 @@
 <form novalidate [formGroup]="form" id="register">
   <fieldset>
     <legend>Registrate</legend>
-    <p>¿Ya tienes Cuenta?
+    
+    <p>Ya usas Next Place?
       <a routerLinkActive="active"
          routerLink="/login"
-     >Ingresa</a>
+     >Inicia Sesión</a>
     </p>
     <div class="form-fields">
       <div class="form-field">
-        <label>Correo:</label>
+        <label>Correo electrónico:</label>
         <input name="email" formControlName="email">
       </div>
        <div class="form-field">
@@ -16,11 +17,11 @@
         <input name="password" formControlName="password" type="password">
       </div>
        <div class="form-field">
-        <label>Confirma Contraseña:</label>
+        <label>Repetir Contraseña:</label>
         <input name="confirm" formControlName="confirm" type="password">
       </div>
     </div>
-    <!-- Si no lals contraseñas no son iguales no habilta el boton -->
+    <!-- disable register button if passwords do not match -->
     <button class="btn" (click)="register()" [disabled]="!isPasswordMatch()">Register</button>
   </fieldset>
 </form>

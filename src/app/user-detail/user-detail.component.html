@@ -1,7 +1,6 @@
-
 <section class="row">
   <header class="col-xs-12">
-    <h2>Bienvenido, {{currentUser?.username}}!</h2>
+    <h2>Hola, {{currentUser?.username}}!</h2>
     <hr>
     <button class="btn btn-sm" routerLink="edit">Editar Perfil</button>
   </header>
@@ -10,10 +9,10 @@
     <label>Imagen de Perfil</label><br><img class="img-responsive img-thumbnail" src="{{currentUser?.photo}}" alt="image-of-user">
   </section>
   <section class="col-sm-6">
-    <label>Nombre de usuario </label><p>{{currentUser?.username}}</p>
+    <label>Nombre de Usuario </label><p>{{currentUser?.username}}</p>
     <label>Ocupacion </label><p>{{currentUser?.occupation}}</p>
     <label>Email </label><p>{{currentUser?.email}}</p>
-    <label>Location </label><p>{{currentUser?.location}}</p>
+    <label>Lugar </label><p>{{currentUser?.location}}</p>
   </section>
 </section>
 <hr>

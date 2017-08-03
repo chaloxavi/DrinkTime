@@ -1,0 +1,11 @@
+<header>
+  <h2>Current Lugars</h2>
+</header>
+<ul class="list-group" *ngFor="let lugar of lugars">
+  <li class="list-group-item">
+    <button class="btn btn-sm edit"(click)="goToEdit(lugar)">Edit</button>
+    <label>Lugar </label><p>{{lugar.lugar_name}}</p>
+    <label>Description</label><p> {{lugar.description}}</p>
+  </li>
+</ul>
+<button class="btn btn-lg add" routerLink="/add-lugar">Add Lugar</button>

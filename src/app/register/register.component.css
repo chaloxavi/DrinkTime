@@ -1,7 +1,21 @@
 fieldset {
-  width: 250px;
+ 
   margin-right: auto;
   margin-left: auto;
+  color: white;
+  margin-top: 25%;
+  width: 150%;
+
+}
+@media (max-width: 360px) {
+  fieldset {
+ 
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  margin-top: 25%;
+
+}
 }
 
 form#register {
@@ -11,12 +25,7 @@ form#register {
   padding: 15px;
 }
 
-form legend {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 5px;
-}
+
 
 form label {
   width: 100%;
@@ -25,14 +34,18 @@ form label {
 
 form input {
   width: 100%;
+  color: black;
 }
 
 form button.btn {
-  float: right;
+  margin-left: 50%;
   color: #f7f5f4;
-  background-color: #4EC5C1
+  background-color: orange;
 }
 
 form button.btn:hover {
   cursor: pointer;
+}
+a{
+  color: orange;
 }

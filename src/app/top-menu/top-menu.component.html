@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse" *ngIf="authInfo?.isLoggedIn()" >
+<nav class="navbar navbar-inverse" *ngIf="authInfo?.isLoggedIn()">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -10,18 +10,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-   
         <li>
           <a  routerLinkActive="active"
               routerLink="community"
               [routerLinkActiveOptions]="{exact:true}"
-          >Lugares</a>
-        </li>
-        <li>
-          <a  routerLinkActive="active"
-              routerLink="recomendaciones"
-              [routerLinkActiveOptions]="{exact:true}"
-          >Recomendaciones</a>
+          >Lugar</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -29,14 +22,14 @@
           <a  routerLinkActive="active"
               routerLink='/user-profile'
               [routerLinkActiveOptions]="{exact:true}"
-              *ngIf="authInfo?.isLoggedIn()"><span class="glyphicon glyphicon-user"></span> My Profile</a>
+              *ngIf="authInfo?.isLoggedIn()"><span class="glyphicon glyphicon-user"></span> Perfil</a>
         </li>
         <li>
           <a  id="logout"
               (click)="logout()"
               routerLinkActive="active"
               [routerLinkActiveOptions]="{exact:true}"
-              *ngIf="authInfo?.isLoggedIn()"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+              *ngIf="authInfo?.isLoggedIn()"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesion</a>
         </li>
       </ul>
     </div>

@@ -9,9 +9,9 @@ export class Promociones {
       public userId: string
     ){
     }
-    static fromJsonList(arrayOfSkillObservables):Promociones[] {
-  return arrayOfSkillObservables.map(inputJsonSingleSkill =>
-    Promociones.fromJson(inputJsonSingleSkill));
+    static fromJsonList(arrayOfLugarObservables):Promociones[] {
+  return arrayOfLugarObservables.map(inputJsonSingleLugar =>
+    Promociones.fromJson(inputJsonSingleLugar));
 }
   static fromJson({
     $key,

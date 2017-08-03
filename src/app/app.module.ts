@@ -32,14 +32,6 @@ import { EditUserprofileComponent } from './edit-userprofile/edit-userprofile.co
 import { UserResolver } from './shared/model/user.resolver';
 import { ViewUserComponent } from './view-user/view-user.component';
 import { EditSkillComponent } from './edit-skill/edit-skill.component';
-import { RecomendacionesComponent } from './recomendaciones/recomendaciones.component';
-import { PrincipalComponent } from './principal/principal.component';
-import { UploadsListComponent } from './uploads-list/uploads-list.component';
-import { UploadsComponentComponent } from './uploads-component/uploads-component.component';
-import { PromocionesFormComponent } from './promociones-form/promociones-form.component';
-import { PromocionesListComponent } from './promociones-list/promociones-list.component';
-import { EditPromocionesComponent } from './edit-promociones/edit-promociones.component';
-import { CreatePromocionesComponent } from './create-promociones/create-promociones.component';
 
 @NgModule({
   declarations: [
@@ -58,16 +50,7 @@ import { CreatePromocionesComponent } from './create-promociones/create-promocio
     CommunitySearchComponent,
     EditUserprofileComponent,
     ViewUserComponent,
-    EditSkillComponent,
-    RecomendacionesComponent,
-    PrincipalComponent,
-    UploadsListComponent,
-    UploadsComponentComponent,
-    PromocionesFormComponent,
-    PromocionesListComponent,
-    EditPromocionesComponent,
-    CreatePromocionesComponent,
- 
+    EditSkillComponent
   ],
   imports: [
     BrowserModule,

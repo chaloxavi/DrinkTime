@@ -2,29 +2,24 @@ import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/cor
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 
 @Component({
-  selector: 'userprofile-form',
-  templateUrl: './userprofile-form.component.html',
-  styleUrls: ['./userprofile-form.component.css']
+  selector: 'lugar-form',
+  templateUrl: './lugar-form.component.html',
+  styleUrls: ['./lugar-form.component.css']
 })
-export class UserprofileFormComponent implements OnInit, OnChanges {
+export class LugarFormComponent implements OnInit, OnChanges {
 
+  form: FormGroup;
   @Input()
   initialValue: any;
 
-  form: FormGroup;
-
   constructor(private formBuilder: FormBuilder) { 
-
     this.form = this.formBuilder.group({
-      username: ['', Validators.required],
-      photo: ['', Validators.required],
-      occupation: ['', Validators.required],
-      location: ['', Validators.required]
+      lugar_name: ['', Validators.required],
+      description: ['', Validators.required],
     });
-
   }
 
-  ngOnInit(){}
+  ngOnInit() {  }
 
   ngOnChanges(changes:SimpleChanges) {
     //make sure form is initialized and look for changes to initialValue input property
@@ -35,12 +30,11 @@ export class UserprofileFormComponent implements OnInit, OnChanges {
   }
 
   isErrorVisible(field: string, error:string) {
-    return this.form.controls[field].dirty //has been touched
+  return this.form.controls[field].dirty //has been touched
       && this.form.controls[field].errors //if form is associated with the field
       && this.form.controls[field].errors[error]; //if the error includes the given error.
   }
 
-  // We need this to get the values from the form
   get value() {
     return this.form.value;
   }
@@ -52,6 +46,5 @@ export class UserprofileFormComponent implements OnInit, OnChanges {
   reset() {
     this.form.reset();
   }
-
 
 }

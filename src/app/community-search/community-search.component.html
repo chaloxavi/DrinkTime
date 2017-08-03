@@ -1,21 +1,20 @@
 <header>
-  <h2>PROMOCIONES EN EL MOMENTO..!!</h2>
+  <h2>Recomendaciones</h2>
   <hr>
 </header>
 <section>
-  
   <div class="search-group-item">
-    <label>Search By Location:</label>
+    <label>Busca recomendaciones por el la locacion:</label>
     <p><input (keyup)=searchByLocation(userLocation.value) placeholder="Location" #userLocation></p>
   </div>
-
   <div class="search-group-item">
-    <label>TIPO:</label>
+    <label>Por tipo:</label>
     <!-- <p><input (keyup)=searchBySkill(skillInput.value) placeholder="Skill Name" #skillInput></p> -->
-    <select (change)=searchBySkill(skillInput.value) #skillInput>
-        <option value="Bebidas">Bebidas</option>
-        <option value="Comida">Comida</option>
-        <option value="Comida y Bebidas">Comida y Bebidas</option>
+    <select (change)=searchBySkill(TipoInput.value) #TipoInput>
+      <option value="Bar">Bar</option>
+      <option value="Restaurante">Restaurante</option>
+      <option value="Bar y Restaurante">Bar y Restaurante</option>
+     
     </select>
   </div>
 </section>

@@ -9,7 +9,7 @@ label {
 
 button.btn {
   color: #f7f5f4;
-  background-color: orange;
+  background-color: #4EC5C1;
 }
 
 button.btn:hover {
@@ -23,7 +23,4 @@ button.btn.btn-sm.edit {
 button.btn.btn-lg.add {
   float: right;
   margin-bottom: 15px;
-}
-p{
-  color: black;
 }

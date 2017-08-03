@@ -1,20 +1,20 @@
 <form [formGroup]="form" autocomplete="off" novalidate>
   <fieldset>
-    <legend>Encontraste una promocion cuentanos...!!</legend>
+    <legend>Promoción</legend>
     <div class="form-field">
-      <label>Tipo</label>
+      <label>Tipo Promoción</label>
       <select name="skill_name" class="form-control" formControlName="skill_name">
-        <option value="Bebidas">Bebidas</option>
-        <option value="Comida">Comida</option>
-        <option value="Comida y Bebidas">Comida y Bebidas</option>
+        <option value="Bar">Bar</option>
+        <option value="Restaurante">Restaurante</option>
+        <option value="Bar y restaurante">Bar y Restaurante</option>
       </select>
-      <div class="field-error-message" *ngIf="isErrorVisible('skill_name', 'required')">Field is required</div>
+      <div class="field-error-message" *ngIf="isErrorVisible('skill_name', 'required')">Espacio Requerido</div>
     </div>
     <div class="form-field">
-      <label>Descripcion</label>
-      <p>¿Donde lo encontraste y que es?</p>
+      <label>Descripción</label>
+      <p>¿En donde estuviste?¿Qu comiste?¿Cuanto te costo? ¿Que tal estuvo?</p>
       <input name="description" class="form-control" formControlName="description">
-      <div class="field-error-message" *ngIf="isErrorVisible('description', 'required')">Field is required</div>
+      <div class="field-error-message" *ngIf="isErrorVisible('description', 'required')">Espacio Requerido</div>
     </div>
   </fieldset>
 </form>

@@ -8,17 +8,11 @@ import { FirebaseListFactoryOpts } from "angularfire2/interfaces";
 
 @Injectable()
 export class UsersService {
-  storage: any;
-  //uploader: FileUploader = new FileUploader({ url: 'drinktime-f1b35.appspot.com' });
-  
+
   sdkDb: any;
-  
 
   constructor(private af: AngularFire, @Inject(FirebaseRef) fb, private db: AngularFireDatabase) {
     this.sdkDb = fb.database().ref();
-    this.storage= fb.storage();
-  
-
   }
 
   findAllUsers(): Observable<User[]> {
@@ -112,7 +106,6 @@ export class UsersService {
     dataToSave['users/' + userId] = userToSave;
     // this time we don't need to update the usersPerCourse because the association is already there.
     return this.firebaseUpdate(dataToSave);
-  
   }
 
 
@@ -130,14 +123,8 @@ export class UsersService {
             subject.complete();
           }
         );
-
-      
     return subject.asObservable();
   }
-
-
-
-  
 
   findUserByKey(key){
     return this.af.database.object('users/' + key);

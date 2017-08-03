@@ -6,7 +6,6 @@ import {CreateUserprofileComponent} from './create-userprofile/create-userprofil
 import {UserDetailComponent} from './user-detail/user-detail.component';
 import {CreateSkillComponent} from './create-skill/create-skill.component';
 import {CommunitySearchComponent} from './community-search/community-search.component';
-import {RecomendacionesComponent} from './recomendaciones/recomendaciones.component';
 import {AuthGuard} from'./shared/security/auth.guard';
 import {EditUserprofileComponent} from'./edit-userprofile/edit-userprofile.component';
 import { UserResolver } from './shared/model/user.resolver';
@@ -29,10 +28,6 @@ export const routerConfig: Route[] = [
   {
     path: 'community',
     component: CommunitySearchComponent
-  },
-  {
-    path: 'recomendaciones',
-    component: RecomendacionesComponent
   },  
   {
     path: 'edit-skill/:id',

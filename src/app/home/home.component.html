@@ -1,21 +1,27 @@
 <!-- <skills-list [skills]=skillsProperty></skills-list> -->
 
 <div class="main">
-  <img src="./assets/images/logo.png" alt="shuffle symbol">
-  <header></header>
-  <h3 id="tagline">Solo dejate llevar <br>Comida , Bebidas & Amigos</h3>
+  <img src="https://firebasestorage.googleapis.com/v0/b/drinktime-f1b35.appspot.com/o/logoprincipal.png?alt=media&token=97ea4f5d-9ec2-41d7-a95b-72c87929153b" alt="shuffle symbol">
+  <header>Encuéntra</header>
+  <h3 id="tagline">Las mejores promociones en<br>tu lugar favorito con la mejor compañía</h3>
   <section id="buttons">
-    <div class="col-xs-6">
+
        <a routerLinkActive="active"
           routerLink="/register"
           *ngIf="!authInfo?.isLoggedIn()"
-      ><button class="btn">Registrate</button></a>
-    </div>
-    <div class="col-xs-6">
-       <a routerLinkActive="active"
-          routerLink="/login"
-          *ngIf="!authInfo?.isLoggedIn()"
-      ><button class="btn">Ingresa</button></a>
-    </div>
+      ><button class="btn">REGISTRARSE</button></a>
+   
+          <p>Ya usas Next Place?
+      <a routerLinkActive="active"
+         routerLink="/login"
+     >Inicia Sesión</a>
+    </p>
+
   </section>
+
+  
+
+  
+
+
 </div>

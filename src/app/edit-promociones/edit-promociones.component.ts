@@ -14,15 +14,7 @@ export class EditPromocionesComponent implements OnInit {
   constructor(private route: ActivatedRoute, private promocionService: PromocionserviceService, private router: Router) { }
 
   ngOnInit() {
-     var skill$ = this.route.params.subscribe(params => {
-      const skillKey = params['id'];
-      return this.skillsService.findSkillByKey(skillKey).subscribe(
-        skill => {
-            this.current_promocion = skill;
-            console.log('current skill', this.current_promocion);
-          }
-        );
-    });
+   
   }
 
 }

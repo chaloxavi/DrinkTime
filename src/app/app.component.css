@@ -1,21 +1,83 @@
 .container-fluid {
   margin-bottom: 45px;
+   display: inline;
 }
 
 
 /* ----------------------------- Footer Styles ------------------------------ */
 
 footer {
-   position: fixed;
-   left: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    height: 5%;
+      position: fixed;
+ left: 0px;
    bottom: 0px;
-   height: 30px;
-   width: 100%;
-   background: #4EC5C1;
+}
+
+p{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    width: 30%;
+    margin:0;
+    padding-left: 3%;
+    
 }
 
 #footer-text {
-  color: #f7f5f4;
+
   text-align: center;
   padding-top: 3px;
+}
+img{
+ padding-left: 3%;
+  width: 10%;
+  float: left;
+}
+
+@media (max-width: 360px) {
+
+  #footer-text {
+
+  text-align: center;
+  padding-top: 3px;
+}
+
+  img{
+padding-left: 3%;
+  width: 20%;
+
+  float: left;
+}
+
+footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    height: 10%; 
+}
+
+p{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+    height: 15%;
+    margin:0;
+    padding-left: 3%;
+    font-size: 27%;
+    
+}
+  
 }

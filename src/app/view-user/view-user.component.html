@@ -7,18 +7,18 @@
     <img class="img-responsive img-thumbnail" src="{{currentUser?.photo}}" alt="image-of-user">
   </section>
   <section class="col-sm-6">
-    <label>Username </label><p>{{currentUser?.username}}</p>
-    <label>Occupation </label><p>{{currentUser?.occupation}}</p>
+    <label>Nombre de Usuario </label><p>{{currentUser?.username}}</p>
+    <label>Ocupacion </label><p>{{currentUser?.occupation}}</p>
     <label>Email </label><p>{{currentUser?.email}}</p>
-    <label>Location </label><p>{{currentUser?.location}}</p>
+    <label>Lugar </label><p>{{currentUser?.location}}</p>
   </section>
 </section>
 <section class="row">
   <section class="col-sm-12">
     <ul class="list-group" *ngFor="let skill of skills$ | async">
       <li class="list-group-item">
-        <label>Skill </label><p>{{skill.skill_name}}</p>
-        <label>Description</label><p> {{skill.description}}</p>
+        <label>Promocion </label><p>{{skill.skill_name}}</p>
+        <label>Descripcion</label><p> {{skill.description}}</p>
       </li>
     </ul>
   </section>

@@ -4,52 +4,65 @@
 }
 
 .main {
-  margin-top: 80px;
+  margin-top: 5%;
   text-align: center;
+ background-image: url("https://firebasestorage.googleapis.com/v0/b/drinktime-f1b35.appspot.com/o/fondohome.jpg?alt=media&token=54e28c6d-b888-4df6-ad42-45f36700ea2b");
+width: 100%;
+height: 150%;
+-webkit-background-size: 100% 100%;           /* Safari 3.0 */
+     -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+       -o-background-size: 100% 100%;           /* Opera 9.5 */
+          background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+ 
 }
 
 img {
   width: 30%;
-  padding-bottom: 30%px;
+  padding-bottom: 35px;
 }
 
 header {
-  font-size: 4.0em;
+  font-size: 6.0em;
   padding: 5px;
-  font-family: 'brand', sans-serif;
-  color: #4EC5C1;
+  color: orange;
   text-align: center;
 }
 
-@media (max-width: 360px) {
-  header {
-    font-size: 3.0em;
-  }
-}
 
 #tagline {
   margin: 20px;
   padding: 10px;
   text-align: center;
-  font-size: 1.0em;
-  color: #4EC5C1;
+  font-size: 2.0em;
+  color: white;
 }
 
 section#buttons {
-  width: 200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 25px;
+  width: 300px;
+margin: 0 auto;
+  padding-bottom: 15px;
 }
 
 section#buttons button.btn {
-  color: #4EC5C1;
-  background-color: #f7f5f4;
-  border-style: solid;
-  border-color: #4EC5C1;
+  color: white;
+  background-color: orange;
+  border-style: solid; 
+
 }
 
 section#buttons button.btn:hover {
   cursor: pointer;
-  background-color: #e2f5f5;
+  background-color: #ffa560;
+}
+
+@media (max-width: 360px) {
+header {
+  font-size: 3.0em;
+  padding: 5px;
+  color: orange;
+  text-align: center;
+}
+
+
+
 }
