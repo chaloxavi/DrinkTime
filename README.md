@@ -6,4 +6,5 @@ Para utilizar el proyecto es necesario seguir los siguientes pasos:
  -
  -1. Clone or download this repository, and in Terminal change directory into the top level of this folder.
  -2. Make sure you have node.js 6 or higher installed.
+ -3. Install the Angular2 CLI globally with this command in any directory: `npm install -g angular-cli`. If you run into permissions errors, use sudo: `sudo npm install -g angular-cli`.
  
