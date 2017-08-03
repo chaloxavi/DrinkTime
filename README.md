@@ -10,3 +10,6 @@ Para utilizar el proyecto es necesario seguir los siguientes pasos:
  -4. Install local dependencies by running: `npm install`
  -5. Install the TypeScript definitions manager globally: `npm install typings --global`, again use sudo if you run into permissions errors: `sudo npm install typings --global`
  -6. Load the app by running `ng serve`.
+ -7. In your browser, navigate to `http://localhost:4200`.
+
+
